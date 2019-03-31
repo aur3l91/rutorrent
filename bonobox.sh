@@ -321,7 +321,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 	echo ""; set "144" "134"; FONCTXT "$1" "$2"; echo -e "${CBLUE}$TXT1 $RTORRENT${CEND}${CGREEN}$TXT2${CEND}"; echo ""
 
 	# création des dossiers
-	su "$USER" -c 'mkdir -p ~/watch ~/torrents ~/.session ~/.backup-session'
+	su "$USER" -c 'mkdir -p ~/Media ~/Other ~/Media/TV ~/Media/Movie ~/Media/Tmp/TV ~/Media/Tmp/Movie ~/Media/Done/TV ~/Media/Done/Movie ~/.session ~/.backup-session'
 
 	# création dossier scripts perso
 	mkdir "$SCRIPT"
