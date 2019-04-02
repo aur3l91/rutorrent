@@ -27,7 +27,7 @@ apt-get install git-core -y
 cd /tmp
 git clone https://github.com/aur3l91/rutorrent-bonobox
 cd rutorrent-bonobox
-chmod a+x bonobox.sh && ./bonobox.sh
+chmod a+x bonobox.sh && ./bonobox.sh --fr
 ```
 ![caps1](https://raw.github.com/exrat/rutorrent-bonobox/master/files/caps_script01.png)
 
