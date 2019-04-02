@@ -25,7 +25,7 @@ apt-get update && apt-get upgrade -y
 apt-get install git-core -y
 
 cd /tmp
-git clone https://github.com/exrat/rutorrent-bonobox
+git clone https://github.com/aur3l91/rutorrent-bonobox
 cd rutorrent-bonobox
 chmod a+x bonobox.sh && ./bonobox.sh
 ```
