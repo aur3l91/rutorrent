@@ -19,7 +19,7 @@
 # apt-get install git-core -y
 #
 # cd /tmp
-# git clone https://github.com/exrat/rutorrent-bonobox
+# git clone https://github.com/aur3l91/rutorrent-bonobox
 # cd rutorrent-bonobox
 # chmod a+x bonobox.sh && ./bonobox.sh
 #
@@ -321,7 +321,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 	echo ""; set "144" "134"; FONCTXT "$1" "$2"; echo -e "${CBLUE}$TXT1 $RTORRENT${CEND}${CGREEN}$TXT2${CEND}"; echo ""
 
 	# création des dossiers
-	su "$USER" -c 'mkdir -p ~/Media ~/Other ~/Media/TV ~/Media/Movie ~/Media/Tmp/TV ~/Media/Tmp/Movie ~/Media/Done/TV ~/Media/Done/Movie ~/.session ~/.backup-session'
+	su "$USER" -c 'mkdir -p ~/Media ~/Media/Other ~/Media/TV ~/Media/Movie ~/Media/Tmp/Other ~/Media/Tmp/TV ~/Media/Tmp/Movie ~/Media/Done/TV ~/Media/Done/Movie ~/Media/Done/Other ~/.session ~/.backup-session'
 
 	# création dossier scripts perso
 	mkdir "$SCRIPT"
@@ -402,7 +402,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 	git clone https://github.com/themightykitten/ruTorrent-MaterialDesign.git "$RUPLUGINS"/theme/themes/MaterialDesign
 
 	# configuration thème
-	sed -i "s/defaultTheme = \"\"/defaultTheme = \"SpiritOfBonobo\"/g;" "$RUPLUGINS"/theme/conf.php
+	sed -i "s/defaultTheme = \"\"/defaultTheme = \"MaterialDesign\"/g;" "$RUPLUGINS"/theme/conf.php
 
 	echo ""; set "148" "134"; FONCTXT "$1" "$2"; echo -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; echo ""
 
